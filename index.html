@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JyX | #1 Gaming Clan Iran</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background 3D Animation -->
+    <div class="background-3d">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+
+    <!-- Particles -->
+    <div id="particles-js"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo-section fade-in">
+            <div class="logo-3d">
+                <span class="logo-text">JyX</span>
+            </div>
+            <h1 class="main-title glow-text">JyX Gaming Clan</h1>
+            <p class="subtitle">#1 Clan Gaming Iran</p>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-number" id="member-count">{{ stats.total_members }}</div>
+                <div class="stat-label">اعضای فعال</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="stat-number" id="game-count">{{ stats.total_games }}</div>
+                <div class="stat-label">بازی های برگزار شده</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="stat-number" id="team-count">{{ stats.total_teams }}</div>
+                <div class="stat-label">تیم های فعال</div>
+            </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="description-section">
+            <div class="feature-card">
+                <div class="feature-icon">🎮</div>
+                <h3>بهترین بات ایران</h3>
+                <p>سیستم Queue پیشرفته، تیکت، گیوآوی و امکانات خفن دیگه</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔥</div>
+                <h3>پلیرهای حرفه‌ای</h3>
+                <p>جمع کن با بهترین بازیکن‌های ایرانی و تجربه بازی حرفه‌ای رو حس کن</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💎</div>
+                <h3>محیط صمیمی و دوستانه</h3>
+                <p>یه فامیل واقعی اینجا همه با همن و باهم لذت می‌بریم</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>ایونت و مسابقات روزانه</h3>
+                <p>هر روز ایونت و مسابقه با جوایز خفن</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>تیم‌بندی عادلانه</h3>
+                <p>سیستم کپیتانی و تیم‌بندی حرفه‌ای برای بازی‌های متعادل</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌟</div>
+                <h3>رتبه‌بندی و آمار کامل</h3>
+                <p>ترک آماراتت، بردها و باخت‌هات رو ببین و ارتقا پیدا کن</p>
+            </div>
+        </div>
+
+        <!-- Join Button -->
+        <div class="join-section">
+            <a href="https://discord.com/invite/JyXteam" target="_blank" class="join-btn">
+                <i class="fab fa-discord"></i>
+                <span>Join Discord</span>
+                <div class="btn-glow"></div>
+            </a>
+            <p class="join-description">بیا تو دیسکورد و عضو خانواده JyX شو 🚀</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2025 JyX Gaming Clan | Made by Tury</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
